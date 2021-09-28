@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  font-family: 'Fraunces', serif;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+header {
+  width: 100%;
+  height: 780px;
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.header_logo img {
+  width: 130%;
+}
+
+.nav_bar {
+  width: 450px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav_bar li {
+  list-style: none;
+}
+
+.nav_bar a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav_bar a:hover {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 12px;
+  background: white;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.card_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_title h1 {
+  color: white;
+  font-size: 68px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin: 70px;
+}
+
+.cards_main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards_main div {
+  width: 50%;
+  height: 590px;
+}
+
+.cards_main picture {
+  min-width: 100px;
+}
+
+.cards_main img {
+  width: 100%;
+}
+
+.cards_text_main {
+  padding: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.card_text_one {
+  padding-left: 133px;
+}
+
+.cards_text_main h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 800;
+  color: hsl(212, 27%, 19%);
+}
+
+.cards_text_main p {
+  width: 115%;
+  line-height: 1.7;
+  color: hsl(210, 4%, 67%);
+}
+
+.cards_text_main h3 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.cards_text_main a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+
+.card_cherry {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+  color: hsl(167, 40%, 24%);
+}
+
+.card_orange {
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-size: cover;
+  color: hsl(198, 62%, 26%);
+}
+
+.card_with_background {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card_with_background h1 {
+  margin: 20px;
+}
+
+.card_with_background p {
+  width: 440px;
+  margin: 10px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.user_comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px 100px 10px;
+}
+
+.user_comments h1 {
+  color: hsl(210, 4%, 67%);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 180px;
+  margin-bottom: 80px;
+}
+
+.cars_users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cars_users div {
+  width: 28%;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cars_users img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+.cars_users p {
+  width: 100%;
+  color: hsl(213, 9%, 39%);
+  margin-top: 50px;
+  line-height: 1.8;
+}
+
+.cars_users b {
+  margin-top: 80px;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+}
+
+#user_charges {
+  margin: 0;
+  margin-bottom: 20px;
+  color: hsl(210, 4%, 67%);
+}
+
+.grid_end {
+  display: flex;
+}
+
+.grid_end picture {
+  width: 25%;
+}
+
+.grid_end img {
+  width: 100%;
+}
+
+footer {
+  margin-top: -10px;
+  background: hsl(167deg 44% 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_footer {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin-top: 100px;
+}
+
+.logo_footer img {
+  width: 100%;
+}
+
+footer div {
+  width: 400px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.rutes_page {
+  justify-content: space-around;
+}
+
+footer li {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(168, 34%, 41%);
+}
+
+footer a:hover {
+  color: white;
+}
+
+.social_networks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* .footer_icon {
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.footer_icon:hover{
+  transform: rotateX(180deg);
+}
+
+.networks_A {
+  position: absolute;
+  backface-visibility: hidden;  
+}
+
+.networks_B {
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+} */
+
+@media(max-width:768px){
+
+  .card_title h1{
+    font-size: 40px;
+  }
+
+  header{
+    height: 417px;
+    padding-top: 0;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: contain;
+  }
+
+  .cards_main{
+    flex-direction: column;
+  }
+  
+  .cards_main div{
+    width: 100%;
+  }
+
+  .card_egg{
+    order: 1;
+  }
+
+  .card_text_one{
+    order: 2;
+  }
+
+  .card_cup_pink{
+    order: 3;
+  }
+
+  .card_text_two{
+    order: 4;
+  }
+
+  .card_cherry{
+    order: 5;
+  }
+
+  .card_orange{
+    order: 6;
+  }
+
+  .user_comments h1{
+    font-size: 23px;
+    margin-top: 100px;
+  }
+
+  .cars_users{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cars_users div {
+    width: 80%;
+  }
+
+  .grid_end{
+flex-wrap: wrap;
+  }
+
+  .grid_end picture{
+    width: 50%;
+  }
+
+}
+
+@media(max-width:375px){
+  header{
+    background-image: url(./images/mobile/image-header.jpg);
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+  }
+
+  .cards_main div{
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .card_egg{
+    height: 60px;
+  } 
+
+  .card_text_one, .card_text_two{
+    padding: 20px;
+    margin-top: -200px;
+  }
+
+  .cards_text_main p{
+    width: 300px;
+  }
+
+  .cards_text_main h1{
+    font-size: 30px;
+  }
+
+  .card_cherry {
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+  }
+
+  .card_orange{
+    background-image: url(./images/mobile/image-photography.jpg);
+  }
+
+  .card_with_background p{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .user_comments h1{
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1;
+  }
+
+  .cars_users b, .cars_users p{
+    margin-top: 40px;
+  }
+
+  .header_logo img{
+    width: 140px;
+  }
+}
